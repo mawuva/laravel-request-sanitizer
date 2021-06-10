@@ -1,19 +1,16 @@
 # Laravel Request Sanitizer
 
-### *An easy to use request sanitizer that allows you to sanitize your form data before validating it.*
+### *Easily sanitize your form data*
 
 <br>
-This package provides an easy way and a fluent interface to format or sanitize form request (user input) before validating them.
+This package provides an easy way and a fluent interface to sanitize form data.
+<br><br>
 
-<br>
+ - The request sanitizer allows you to easily 
+manipulate your form data before any validation or treatment. 
+ - It's also compatible with Laravel's `FormRequest` object.
 
-## Why this package ?
-
-Often, validating your request is not enough. The request sanitizer allows you to easily 
-manipulate your form data (user input) before passing it to the validator. 
-It is fully compatible with Laravel's `FormRequest` object.
-
-## Quick example
+## Usage
 
 Syntax is similar to the way `rules` are added to a [Form Request](https://laravel.com/docs/master/validation#form-request-validation).
 
@@ -83,12 +80,11 @@ Both parameters can be either an `array` or `string` type:
  }
 ```
 
-For more information on filter_vars please refer to [PHP Documentation](https://www.php.net/manual/en/function.filter-var.php.)
+Please check [PHP Documentation](https://www.php.net/manual/en/function.filter-var.php.) for more information on `filter_vars`.
 
 ## Writing your own Sanitizer
 
-Writing your own sanitizer can be done by implementing the `Sanitizer` interface, which requires only
-one method.
+You can write your own sanitizer can be done by implementing the `SanitizerContract` interface, which requires only one method.
 
 ```php
 namespace Mawuekom\RequestSanitizer\Contracts;
@@ -111,6 +107,10 @@ interface SanitizerContract
     public function sanitize($input);
 }
 ```
+
+## Report bug
+
+Contact me on Twitter [@ephraimseddor](https://twitter.com/ephraimseddor)
 
 ## License
 

@@ -1,6 +1,6 @@
 {
     "name": "mawuekom/laravel-request-sanitizer",
-    "description": "An easy to use request sanitizer that allows you to sanitize your form data before validating it.",
+    "description": "Easily sanitize your form data",
     "keywords": [
         "mawuekom", "laravel",
         "laravel-request-sanitizer", "request",
