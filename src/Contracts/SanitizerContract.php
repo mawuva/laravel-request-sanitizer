@@ -5,11 +5,11 @@ namespace Mawuekom\RequestSanitizer\Contracts;
 /**
  * Request sanitizer contract
  *
- * Interface Sanitizer
+ * Class DataManagerRepo
  *
  * @package Mawuekom\RequestSanitizer\Contracts
  */
-interface Sanitizer
+interface SanitizerContract
 {
     /**
      * Sanitize an input and return it.
