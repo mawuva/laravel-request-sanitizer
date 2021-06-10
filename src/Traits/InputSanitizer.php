@@ -36,7 +36,7 @@ trait InputSanitizer
         $input = $this ->all();
 
         foreach ($this ->getSanitizers() as $form_input => $sanitizers) {
-            if ($this ->has($form_input)) {
+            if (!$this ->has($form_input)) {
                 // If the request does not have a property for this key, there is no need to sanitize anything.
                 continue;
             }

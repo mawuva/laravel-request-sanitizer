@@ -5,22 +5,22 @@ namespace Mawuekom\RequestSanitizer\Sanitizers;
 use Mawuekom\RequestSanitizer\Contracts\SanitizerContract;
 
 /**
- * Capitalizes the first character of a string
+ * Converts a string to uppercase
  *
- * Class Capitalize
+ * Class uppercase
  *
  * @package Mawuekom\RequestSanitizer\Sanitizers
  */
-class Capitalize implements SanitizerContract
+class Uppercase implements SanitizerContract
 {
     /**
      * Sanitize an input and return it.
      *
      * @param  $input
-     * @return mixed
+     * @return string
      */
     public function sanitize($input)
     {
-        return ucfirst($input);
+        return strtoupper($input);
     }
 }
