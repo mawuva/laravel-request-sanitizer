@@ -1,0 +1,60 @@
+{
+    "name": "mawuekom/laravel-request-sanitizer",
+    "description": "An easy to use request sanitizer that allows you to sanitize your form data before validating it.",
+    "keywords": [
+        "mawuekom", "laravel",
+        "laravel-request-sanitizer", "request",
+        "sanitizer",
+        "validation",
+        "form"
+    ],
+    "homepage": "https://github.com/mawuekom/laravel-request-sanitizer",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Seddor Ephraïm",
+            "email": "seddorephraim7@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.3|^7.4|^8.0",
+        "illuminate/http": "^6.0|^7.0|^8.0",
+        "symfony/http-foundation": "^4.3.4|>=5.1.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mawuekom\\RequestSanitizer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mawuekom\\RequestSanitizer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mawuekom\\RequestSanitizer\\RequestSanitizerServiceProvider"
+            ],
+            "aliases": {
+                "RequestSanitizer": "Mawuekom\\RequestSanitizer\\RequestSanitizerFacade"
+            }
+        }
+    }
+}
