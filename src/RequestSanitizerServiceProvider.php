@@ -19,9 +19,6 @@ class RequestSanitizerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Register the main class to use with the facade
-        $this->app->singleton('request-sanitizer', function () {
-            return new RequestSanitizer;
-        });
+        
     }
 }

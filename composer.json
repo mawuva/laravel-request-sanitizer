@@ -8,7 +8,7 @@
         "validation",
         "form"
     ],
-    "homepage": "https://github.com/mawuekom/laravel-request-sanitizer",
+    "homepage": "https://github.com/mawuva/laravel-request-sanitizer",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -51,10 +51,7 @@
         "laravel": {
             "providers": [
                 "Mawuekom\\RequestSanitizer\\RequestSanitizerServiceProvider"
-            ],
-            "aliases": {
-                "RequestSanitizer": "Mawuekom\\RequestSanitizer\\RequestSanitizerFacade"
-            }
+            ]
         }
     }
 }
