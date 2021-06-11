@@ -11,7 +11,7 @@ use Mawuekom\RequestSanitizer\Contracts\SanitizerContract;
  *
  * @package Mawuekom\RequestSanitizer\Sanitizers
  */
-class StrigTags implements SanitizerContract
+class StripTags implements SanitizerContract
 {
     /**
      * Sanitize an input and return it.
