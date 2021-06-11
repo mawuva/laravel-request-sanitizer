@@ -4,5 +4,5 @@ namespace Mawuekom\RequestSanitizer;
 
 class RequestSanitizer
 {
-    // Build your next great package.
+    // Build your great package.
 }
