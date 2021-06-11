@@ -10,6 +10,14 @@ This package provides an easy way and a fluent interface to sanitize form data.
 manipulate your form data before any validation or treatment. 
  - It's also compatible with Laravel's `FormRequest` object.
 
+## Installation
+
+You can install the package via composer:
+
+```bash
+composer require mawuekom/laravel-request-sanitizer
+```
+
 ## Usage
 
 Syntax is similar to the way `rules` are added to a [Form Request](https://laravel.com/docs/master/validation#form-request-validation).
@@ -31,14 +39,6 @@ class StoreUserDataRequest extends FormRequest
         ],
      ];
 }
-```
-
-## Installation
-
-You can install the package via composer:
-
-```bash
-composer require mawuekom/laravel-request-sanitizer
 ```
 
 ## Available Sanitizers
@@ -84,7 +84,7 @@ Please check [PHP Documentation](https://www.php.net/manual/en/function.filter-v
 
 ## Writing your own Sanitizer
 
-You can write your own sanitizer can be done by implementing the `SanitizerContract` interface, which requires only one method.
+You can write your own sanitizer by implementing the `SanitizerContract` interface, which requires only one method.
 
 ```php
 namespace Mawuekom\RequestSanitizer\Contracts;
@@ -107,10 +107,6 @@ interface SanitizerContract
     public function sanitize($input);
 }
 ```
-
-## Report bug
-
-Contact me on Twitter [@ephraimseddor](https://twitter.com/ephraimseddor)
 
 ## License
 
